@@ -1,0 +1,13 @@
+syntax = "proto3";
+package poc;
+
+message HandShake {
+    string version = 1;
+    string timestamp = 2;
+
+    message Echo {
+        string content = 1;
+    }
+
+    repeated Echo messages = 3;
+}
